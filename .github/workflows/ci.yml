@@ -19,3 +19,13 @@ jobs:
       - name: Run Pytest
         run: |
           pytest app/
+
+      - name: Run Ruff (optional)
+        run: |
+          pip install ruff
+          ruff app/
+
+      - name: Run Pyright (optional)
+        run: |
+          npm install -g pyright
+          pyright app/
