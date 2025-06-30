@@ -1,1 +1,6 @@
 flask
+gunicorn
+pytest
+ruff
+pyright
+black
