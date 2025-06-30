@@ -2,11 +2,12 @@
 
 from app import app
 
+
 def test_home():
     # Use Flask's test client to simulate requests
     client = app.test_client()
-    response = client.get('/')
-    
+    response = client.get("/")
+
     # Assert the response is OK
     assert response.status_code == 200
 
